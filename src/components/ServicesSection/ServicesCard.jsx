@@ -3,7 +3,7 @@ import { useState } from 'react'
 export default function SCard ({icon,title,hoverImage,description}) {
     const [ hovered , setHovered ] = useState(false)
     return (
-        <div className= {styles.sCard} style={{ "--hover-img": `url(${hoverImage})` }}onMouseEnter={setHovered(true)} onMouseLeave={setHovered(false)}>
+        <div className= {styles.sCard} style={{ "--hover-img": `url(${hoverImage})` }} onMouseEnter={()=>setHovered(true)} onMouseLeave={()=>setHovered(false)}>
             {!hovered && (
             <>
                 <div className= {styles.iconCircle}>{icon}</div>
