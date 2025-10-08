@@ -73,11 +73,11 @@
     margin: 0.5em;
 }
 
-.sCard:hover {
+/* .sCard:hover {
     transform: rotate(360deg);
     background-image: var(--hover-img);
     border-radius: 10%;
-}
+} */
 
 .iconCircle {
     width: 40%;
