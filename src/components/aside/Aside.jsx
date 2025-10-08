@@ -14,7 +14,7 @@ export default function Aside({aside , setAside}) {
                 <FontAwesomeIcon id={styles.brandPaw} icon={faPaw} />
                 <button id={styles.asideBtn}><FontAwesomeIcon icon={faX} id={styles.icon} onClick={()=>setAside(false)}/></button>
             </div>
-            <Nav styles={styles}/>
+            <Nav styles={styles} setAside={setAside}/>
         </aside>
         <div id={styles.asideBlackScreen} style={{display: aside? `block` : `none`}}></div>
         </>
