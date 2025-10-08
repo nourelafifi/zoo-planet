@@ -25,7 +25,7 @@ function App() {
   }, [aside]);
   return (
     <>
-      <BrowserRouter>
+      <BrowserRouter basename="/zoo-planet">
         <ScrollToTop />
         <Header setAside={setAside}/>
         <Aside aside={aside} setAside={setAside}/>
