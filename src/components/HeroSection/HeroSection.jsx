@@ -4,7 +4,7 @@ import { faHeart } from '@fortawesome/free-solid-svg-icons'
 import styles from './hero-section.module.css'
 export default function HeroSection() {
     function scrollToContact() {
-        window.scrollTo({top: 3020, behavior: "smooth"})
+        window.scrollTo({top: 10000, behavior: "smooth"})
     }
     
     return (

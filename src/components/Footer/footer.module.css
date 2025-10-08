@@ -4,7 +4,6 @@ footer {
     background-image: url(../../assets/locations.png);
     background-position: center;
     background-repeat: no-repeat;
-    background-attachment: fixed;
     background-size: cover;
     position: relative;
     color: #FBFAF6;
