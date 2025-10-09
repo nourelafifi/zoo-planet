@@ -11,7 +11,7 @@ export default function SCard ({icon,title,hoverImage,description}) {
         borderRadius: '50%'
         };
     return(
-        <div className= {styles.sCard} style={hovering} onMouseEnter={()=>setHovered(true)} onMouseLeave={()=>setHovered(false)}>
+        <div className= {styles.sCard} style={hovering} onMouseEnter={()=>setHovered(true)} onMouseLeave={()=>setHovered(false)} onPointerEnter={()=>setHovered(true)} onPointerLeave={()=>setHovered(false)}>
             {!hovered && (
             <>
                 <div className= {styles.iconCircle}>{icon}</div>
