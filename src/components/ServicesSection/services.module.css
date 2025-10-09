@@ -61,9 +61,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-image: linear-gradient(to top right, #93a55d, #afc56b);
     color: #fffaf4;
-    border-radius: 50%;
     font-size: 1em;
     background-position: center;
     background-size: cover;
@@ -72,12 +70,6 @@
     transition: 0.5s;
     margin: 0.5em;
 }
-
-/* .sCard:hover {
-    transform: rotate(360deg);
-    background-image: var(--hover-img);
-    border-radius: 10%;
-} */
 
 .iconCircle {
     width: 40%;
