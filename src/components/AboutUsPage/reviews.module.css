@@ -1,0 +1,154 @@
+.customShapeDividerTop1759339122 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.customShapeDividerTop1759339122 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 30px;
+}
+
+.customShapeDividerTop1759339122 .shapeFill {
+    fill: #fbfaf6;
+}
+#review {
+    min-height: fit-content;
+    background-color: #D85739;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#heading {
+    padding-top: 50px;
+}
+
+.review {
+    width: 500px;
+    background-color: #93a55d;
+    height: 250px;
+    border-radius: 10px;
+    padding: 20px;
+    color: #fbfaf6;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+    position: relative;
+    transition: 1s;
+}
+
+.smallReview {
+        width: 300px;
+        height: 200px;
+        background-color: #93a55d;
+        border-radius: 10px;
+        padding: 20px;
+        color: #fbfaf6;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 20px;
+        position: relative;
+        transition: 1s;
+        font-size: 0.7em;
+    }
+
+.review span {
+    position: absolute;
+    bottom: 30px;
+    margin: 0;
+}
+
+.carousel {
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    margin-top: 50px;
+}
+
+.carouselTrack {
+    transition: transform 1s ease-in-out;
+    display: flex;
+    flex-direction: row;
+}
+
+#activeSlide {
+    transform: scale(1.1);
+}
+
+.hoverBtns {
+    position: absolute;
+    z-index: 2;
+    border-radius: 50%;
+    border: none;
+    background-color: #fbfaf6;
+    opacity: 0.7;
+    width: 50px;
+    height: 50px;
+    font-size: 30px;
+    font-weight: 900;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 250px;
+}
+
+#leftBtn {
+    left: 20%;
+}
+
+#rightBtn {
+    right: 20%;
+}
+
+.smallReview {
+        width: 300px;
+        height: 150px;
+    }
+
+@media screen and (max-width:1000px) {
+    #leftBtn {
+    left: 10%;
+}
+
+#rightBtn {
+    right: 10%;
+}
+}
+
+@media screen and (max-width:770px) {
+    #leftBtn {
+    left: 5%;
+}
+
+    #rightBtn {
+    right: 5%;
+}
+}
+
+@media screen and (max-width:690px) {
+    .hoverBtns {
+        top: 200px;
+    }
+    
+    #leftBtn {
+    left: 5px;
+}
+
+#rightBtn {
+    right: 5px;
+}
+
+.carousel {
+    margin-top: 25px;
+}
+}

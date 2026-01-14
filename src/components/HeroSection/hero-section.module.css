@@ -1,0 +1,184 @@
+#hero {
+    padding: 0.7em 3em;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+    position: relative;
+    background-image: url(../../assets/hero-background.jpg);
+    background-repeat: no-repeat;
+    background-clip: border-box;
+    background-position: center;
+    background-size: cover;
+    min-height: 90vh;
+}
+
+#hero p {
+    margin-top: 27%;
+    font-weight: 900;
+    font-size: 3rem;
+    line-height: 1.4em;
+    color: #93a55d;
+}
+
+#hero p span {
+    margin-left: 3rem;
+    font-size: 3rem;
+}
+
+#contactButton {
+    margin-top: 1.2em;
+    display: block;
+    background-color: #93a55d;
+    color: #fbfaf6;
+    border: none;
+    border-radius: 0.5em;
+    width: 7em;
+    height: 3em;
+    font-weight: bolder;
+    font-size: 1.3em;
+    position: relative;
+    left: 38%;
+}
+
+#heroPic {
+    background-image: radial-gradient(#fbfaf6 60%, #e4ddc3 );
+    border-radius: 35% 65% 54% 46% / 46% 56% 44% 54%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 450px;
+    max-height: 400px;
+}
+
+#heroPic img{
+    margin-top: 11%; 
+    width: 95%;
+}
+
+.customShapeDividerBottom1756642303 {
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.customShapeDividerBottom1756642303 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 79px;
+}
+
+.customShapeDividerBottom1756642303 .shapeFill {
+    fill: #D85739;
+}
+
+@media screen and (min-width:2150px) {
+    #hero p {
+        font-size: 4.7rem;
+    }
+
+    #hero p span {
+        font-size: 4.7rem;
+    }
+
+    #heroPic {
+        max-width: none;
+        max-height: none;
+        width: 900px;
+        height: 750px;
+    }
+
+    #contactButton {
+        width: 9em;
+        height: 4em;
+        border-radius: 1em;
+        font-size: 2.3rem;
+    }
+}
+
+@media screen and (max-width:1150px) {
+    #hero p {
+        font-size: 1.7rem;
+    }
+
+    #hero p span {
+        font-size: 1.7rem;
+    }
+}
+
+@media screen and (max-width:900px) {
+    #hero {
+    padding: 0.5em 1em;
+    }
+
+    #heroPic {
+        width: 55%;
+    }
+
+    #hero p {
+        font-size: 1.8rem;
+    }
+
+    #hero p span {
+        font-size: 1.8rem;
+        margin-left: 0px;
+    }
+
+    #contactButton {
+        left: 20%;
+    }
+}
+
+@media screen and (max-width:739px) {
+    #hero {
+        flex-direction: column;
+        justify-content: space-around;
+        min-height: 100vh;
+    }
+    #hero p {
+        font-size: 2rem;
+    }
+
+    #hero p span {
+        font-size: 2rem;
+        margin-left: 3rem;
+    }
+
+    #contactButton {
+        left: 50%;
+        transform: translateX(-50%);
+        margin-bottom: 0.6em;
+    }
+
+    .customShapeDividerBottom1756642303 svg {
+        height: 35px;
+    }
+    
+    #heroPic {
+        margin-bottom: 1.7em;
+        width: 90%;
+    }
+
+}
+
+@media screen and (max-width:430px) {
+    #hero p {
+        font-size: 1.5rem;
+    }
+
+    #hero p span {
+        font-size: 1.5rem;
+    }
+}
+
+@media screen and (max-width:360px) {
+    #hero p span {
+        margin-left: 0px;
+    }
+}

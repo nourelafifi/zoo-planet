@@ -1,0 +1,26 @@
+#consultationIcon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 75px;
+    height: 75px;
+    background-color: #93a55d;
+    color: #fbfaf6;
+    border-radius: 50%;
+    position: fixed;
+    right: 10px;
+    bottom: 15px;
+    z-index: 3;
+    font-size: 25px;
+    cursor: pointer;
+    border: none;
+    transition: 1s;
+}
+
+#consultationIcon:hover {
+    transform: rotate(360deg);
+}
+
+#icon :hover {
+    cursor: pointer;
+}

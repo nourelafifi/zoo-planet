@@ -1,0 +1,129 @@
+#aboutUs {
+    background-color: #D85739;
+    min-height: fit-content;
+    padding: 1.5em 1.7em;
+    color: #fbfaf6;
+}
+
+#aboutUs article {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 22px;
+    width: 100%;
+}
+
+#aboutUs p {
+    max-width: 65%;
+    padding: 0.8em;
+}
+
+#aboutUsPic {
+    max-width: 27%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+#aboutUsPic::before {
+        content: '';
+        width: 100%;
+        height: 100%;
+        background-color: #fbfaf6;
+        opacity: 0.7;
+        border-radius: 69% 31% 69% 31% / 36% 73% 27% 64%  ;
+        position: absolute;
+        z-index: 1;
+        animation-name: pseudo-motion;
+        animation-duration: 8s;
+        animation-iteration-count: infinite;
+}
+
+@keyframes pseudo-motion {
+    0%{
+        border-radius: 69% 31% 69% 31% / 36% 73% 27% 64%;
+    }
+    35%{
+        border-radius: 40% 60% 44% 56% / 58% 33% 67% 42% ;
+    }
+    60% {
+        border-radius: 69% 31% 69% 31% / 36% 73% 27% 64% ;
+    }
+    100% {
+        border-radius: 69% 31% 69% 31% / 36% 73% 27% 64% ;
+    }
+}
+
+#aboutUsPic img{
+    width: 100%;
+    border-radius: 40% 60% 44% 56% / 58% 33% 67% 42%;
+    z-index: 2;
+    animation-name: brand-wave;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes brand-wave {
+    0%{
+        border-radius: 40% 60% 44% 56% / 58% 33% 67% 42%;
+    }
+    35%{
+        border-radius: 69% 31% 69% 31% / 36% 73% 27% 64% ;
+    }
+    60% {
+        border-radius: 40% 60% 44% 56% / 58% 33% 67% 42%;
+    }
+    100% {
+        border-radius: 40% 60% 44% 56% / 58% 33% 67% 42%;
+    }
+}
+
+#aboutUs button {
+    display: block;
+    width: 7em;
+    height: 3em;
+    background-color: #93a55d;
+    border-radius: 0.5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.4rem;
+    font-weight: bolder;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+    color: #fbfaf6;
+    border: none;
+    margin-top: 1em;
+}
+
+@media screen and (max-width: 600px) {
+
+    #aboutUs {
+        padding: 1.5em 0em;
+    }
+
+    #aboutUs article {
+        flex-direction: column-reverse;
+    }
+
+    #aboutUs p {
+        margin-left: 0;
+        width: 100%;
+        max-width: none;
+    }
+
+    #aboutUsPic {
+        max-width: none;
+        width: 70%;
+        margin-top: 0.5em;
+    }
+}
+
+@media screen and (min-width: 1800px) {
+    #aboutUs p {
+        font-size: 2.5rem;
+    }
+}

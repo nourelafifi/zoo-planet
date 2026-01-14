@@ -1,0 +1,208 @@
+.services {
+    height: fit-content;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    top: -2px;
+    padding-bottom: 1em;
+}
+
+.customShapeDividerTop1756753075 {
+    position: relative;
+    top: -2px;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.customShapeDividerTop1756753075 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 50px;
+}
+
+.customShapeDividerTop1756753075 .shapeFill {
+    fill: #D85739;
+}
+
+.services h2 {
+    margin-top: 1.2em;
+    color: #93a55d;
+}
+
+#servicesContent {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    height: fit-content;
+    position: relative;
+    width: 200%;
+    position: relative;
+    transition: 0.5s;
+    padding: 1.1em 0em;
+}
+
+.slide {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, auto);
+    width: 100%;
+    justify-items: center;
+}
+
+.sCard {
+    height: 250px;
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #fffaf4;
+    font-size: 1em;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: 2;
+    transition: 0.5s;
+    margin: 0.5em;
+}
+
+.iconCircle {
+    width: 40%;
+    height: 40%;
+    background-color: #fffaf4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #D85739;
+    border-radius: 50%;
+    font-size: 35px;
+    margin-bottom: 2%;
+}
+
+.slideBtn {
+    background-color: transparent;
+    border: none;
+    font-size: 1.7rem;
+    margin: 0.2em;
+    opacity: 0.5;
+    transform: scale(0.5);
+    transition: 0.5s;
+}
+
+.slideBtn:hover {
+    opacity: 1;
+}
+
+#activeSlideBtn {
+    opacity: 1;
+    transform: scale(1);
+}
+
+@media screen and (min-width:2000px) {
+    .sCard {
+        width:  450px;
+        height: 450px;
+        font-size: 2rem
+    }
+
+    .iconCircle {
+        font-size: 45px;
+    }
+
+    .slideBtn {
+        font-size: 2.3rem;
+        margin: 0.4em;
+    }
+}
+
+@media screen and (min-width:1700px) {
+    .sCard {
+        width:  350px;
+        height: 350px;
+        font-size: 1.5rem
+    }
+
+    .iconCircle {
+        font-size: 45px;
+    }
+
+    .slideBtn {
+        font-size: 2rem;
+        margin: 0.35em;
+    }
+}
+
+@media screen and (max-width: 1170px) {
+    .sCard {
+        width: 200px;
+        height: 200px;
+        font-size: 0.8rem
+    }
+
+    .iconCircle {
+        font-size: 30px;
+    }
+}
+
+@media screen and (max-width: 850px) {
+    .sCard {
+        width:  150px;
+        height: 150px;
+        font-size: 0.6rem
+    }
+
+    .iconCircle {
+        font-size: 25px;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .sCard {
+        width:  120px;
+        height: 120px;
+        font-size: 0.4rem
+    }
+
+    .iconCircle {
+        font-size: 20px;
+    }
+
+    .slideBtn {
+        font-size: 1.3rem;
+        margin: 0.1em;
+    }
+}
+
+@media screen and (max-width: 510px) {
+    .sCard {
+        width:  80px;
+        height: 80px;
+        font-size: 0.35rem
+    }
+
+    .iconCircle {
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 345px) {
+        .sCard {
+        width:  60px;
+        height: 60px;
+        font-size: 0.25rem
+    }
+
+    .iconCircle {
+        font-size: 12px;
+    }
+
+    .slideBtn {
+        font-size: 1rem;
+        margin: 0.07em;
+    }
+}

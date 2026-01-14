@@ -1,0 +1,118 @@
+header {
+    width: 100%;
+    min-height: 7%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 1em;
+    padding: 0.1em 0.7em;
+    background-color: #fbfaf6;
+    align-items: center;
+    z-index: 10;
+    box-shadow: 0px 0.5px 10px gray;
+    position: fixed;
+}
+
+#asideHeaderBtn {
+    position: absolute;
+    left: 0.3em;
+    background-color: transparent;
+    border: none;
+    font-size: 1.2rem;
+    color: #93a55d;
+    display: none;
+}
+
+#brand {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#brand h2 {
+    font-size: 1.1rem;
+    font-family: archivo black;
+    margin-left: 0.3em;
+    color: #93a55d;
+}
+
+#logo {
+    height: 3.2em;
+}
+
+#brandPaw {
+    font-size: 0.8em;
+    rotate: -30deg;
+    margin-bottom: 1.5em;
+    margin-left: 0.5em;
+    color: #d85739;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    min-width: 58%;
+}
+
+nav a {
+    font-size: 1.1rem;
+    color: #93a55d;
+    transition: 0.5s;
+    cursor: pointer;
+    font-weight: bolder;
+    position: relative;
+}
+
+nav a:hover {
+    color: #d85739;
+}
+
+.navPaw {
+    font-size: 10px;
+    rotate: -30deg;
+    position: relative;
+    bottom: 15px;
+    left: 2px;
+}
+
+@media screen and (max-width:749px) {
+    nav {
+        display: none;
+    }
+    header {
+        justify-content: center;
+    }
+    #asideHeaderBtn {
+        display: block;
+    }
+}
+
+@media screen and (min-width:750px) and (max-width:1024px) {
+    nav a {
+        font-size: 0.85rem;
+    }
+}
+
+@media screen and (min-width:2560px) {
+    nav a {
+        font-size: 2em;
+    }
+
+    .navPaw {
+        font-size: 17px;
+        bottom: 27px;
+    }
+
+    #logo {
+        height: 6em;
+    }
+
+    #brand h2 {
+        font-size: 2em;
+    }
+
+    #brandPaw {
+        font-size: 1.5em;
+    }
+}

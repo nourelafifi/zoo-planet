@@ -1,0 +1,187 @@
+#team {
+    background-color: #fbfaf6;
+    padding-top: 20px;
+    position: relative;
+}
+
+#mainContainer {
+    padding: 50px 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+}
+
+.carousel {
+    width: 400px;
+    height: 500px;
+    overflow: hidden;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+}
+
+.carouselTrack {
+    transition: transform 5s ease-in-out;
+    display: flex;
+    flex-direction: column;
+}
+
+.carouselTrack img {
+    height: 100%;
+}
+
+.container {
+    overflow: hidden;
+    height: 25px;
+    margin-bottom: 40px;
+}
+
+.nameContainer {
+    overflow: hidden;
+    height: 35px;
+    margin-bottom: 60px;
+}
+
+.viewer {
+    transition: 3s ease-in-out;
+}
+
+.staffDetails h3{
+    font-size: 30px;
+    color: #93a55d;
+    transition: 4s ease-in-out;
+    font-weight: bolder;
+}
+
+.staffDetails h4 {
+    transition: 5s ease-in-out;
+    font-size: 22px;
+}
+
+#icon {
+    font-size: 30px;
+    color: #93a55d;
+    font-weight: bolder;
+    position: absolute;
+    margin-top: 3px;
+    margin-left: -45px;
+}
+
+.customShapeDividerTop1759339122 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.customShapeDividerTop1759339122 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 30px;
+}
+
+.customShapeDividerTop1759339122 .shape-fill {
+    fill: #D85739;
+}
+
+@media screen and (max-width:1000px) {
+    .carousel {
+        width: 350px;
+        height: 475px;
+    }
+    
+    .staffDetails h3{
+        font-size: 25px;
+    }
+
+    .staffDetails h4 {
+        font-size: 17px;
+    }
+
+    .nameContainer {
+        height: 26px;
+    }
+
+    .container {
+        height: 19px;
+    }
+
+    #icon {
+        font-size: 25px;
+    }
+}
+
+@media screen and (max-width:820px) {
+    .carousel {
+        width: 300px;
+        height: 425px;
+    }
+
+    .staffDetails h3{
+        font-size: 22px;
+    }
+
+    .staffDetails h4 {
+        font-size: 14px;
+    }
+
+    .container {
+        height: 15px;
+    }
+
+    #icon {
+        font-size: 22px;
+        margin-left: -35px;
+    }
+}
+
+@media screen and (max-width:690px) {
+    #mainContainer {
+        flex-direction: column;
+    }
+
+    .staffDetails {
+        margin-top: 20px;
+    }
+
+    .nameContainer{
+        margin-bottom: 40px;
+    }
+
+    .container {
+        margin-bottom: 20px;
+    }
+}
+
+@media screen and (max-width:400px) {
+    .staffDetails h3{
+        font-size: 18px;
+    }
+
+    .staffDetails h4 {
+        font-size: 10px;
+    }
+
+    .container {
+        height: 14px;
+    }
+
+    .nameContainer {
+        height: 21px;
+    }
+
+    .carousel {
+        width: 250px;
+        height: 375px;
+    }
+
+    #icon {
+        font-size: 18px;
+        margin-left: -25px;
+    }
+}
