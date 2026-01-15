@@ -1,4 +1,4 @@
-import notFoundImg from '../assets/notfound.png'
+import notFoundImg from '../assets/notfound.webp'
 import styles from '../styles/notfound.module.css'
 import { Link } from 'react-router-dom'
 export default function NotFound() {

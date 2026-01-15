@@ -1,4 +1,4 @@
-import Logo from '../../assets/Logo.png'
+import Logo from '../../assets/Logo.webp'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faPaw } from '@fortawesome/free-solid-svg-icons'
 import { faBars } from '@fortawesome/free-solid-svg-icons'

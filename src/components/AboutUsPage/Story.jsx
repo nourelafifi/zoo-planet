@@ -2,13 +2,13 @@ import Curousel from './Curousel';
 import styles from './story.module.css'
 import Typewriter from 'typewriter-effect'
 import { useState } from 'react'
-import beginning from '../../assets/beginning.png'
-import hospital from '../../assets/hospital.png'
-import thanAStore from '../../assets/thanAStore.png'
-import philosophy from '../../assets/philosophy.png'
-import team from '../../assets/team.png'
-import commitment from '../../assets/commitment.png'
-import promise from '../../assets/promise.png'
+import beginning from '../../assets/beginning.webp'
+import hospital from '../../assets/hospital.webp'
+import thanAStore from '../../assets/thanAStore.webp'
+import philosophy from '../../assets/philosophy.webp'
+import team from '../../assets/team.webp'
+import commitment from '../../assets/commitment.webp'
+import promise from '../../assets/promise.webp'
 const script = [
     "<span>Our Beginning (2012)</span><br>Zoo Planet was founded with a simple dream: to<br>create a trusted haven where pets and their<br>families could find both expert medical care<br>and everyday essentials under one roof.",
     "<span>More Than a Pet Hospital</span><br>From day one, we’ve gone beyond routine<br>treatments. Our team of skilled veterinarians<br>provides preventive care, life-saving urgent<br>care, and long-term wellness support—ensuring<br>every pet enjoys a healthier, happier life.",

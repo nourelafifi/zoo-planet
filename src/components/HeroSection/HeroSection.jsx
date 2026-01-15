@@ -1,4 +1,4 @@
-import heroPic from '../../assets/hero-pic.png'
+import heroPic from '../../assets/hero-pic.webp'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faHeart } from '@fortawesome/free-solid-svg-icons'
 import styles from './hero-section.module.css'

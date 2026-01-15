@@ -1,5 +1,5 @@
 import styles from './footer.module.css'
-import logo from '../../assets/Logo.png'
+import logo from '../../assets/Logo.webp'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faPhone } from '@fortawesome/free-solid-svg-icons'
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons'

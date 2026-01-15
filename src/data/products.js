@@ -1,10 +1,10 @@
-import brush from '../assets/products/Brush.png'
-import catHouse from '../assets/products/cat house.jpg'
+import brush from '../assets/products/Brush.webp'
+import catHouse from '../assets/products/cat house.webp'
 import scratchTower from '../assets/products/cat scratch tower.webp'
 import dogRope from '../assets/products/dog rope.webp'
 import drinkingPlate from '../assets/products/drinking plate.webp'
 import foodPlate from '../assets/products/food plate.webp'
-import chewingToy from '../assets/products/chewing toy.jpg'
+import chewingToy from '../assets/products/chewing toy.webp'
 import litterBox from '../assets/products/litter box.webp'
 const products = [
     {
