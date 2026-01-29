@@ -7,11 +7,14 @@ export default function StaffCard({staff , index , setIndex}) {
         },9000)
         return () => clearInterval(interval);
     }, [index])
+    const firstmember = staff[0]
+    const otherMembers = staff.slice(1)
     return (
         <>
             <div className= {styles.carousel}>
                 <div className= {styles.carouselTrack} style={{transform: `translateY(-${index * 100}%)`}}>
-                    {staff.map((member)=> (<img key={member.id} src={member.picture} alt={member.name}/>))}
+                    <img src={firstmember.picture} alt={firstmember.name}/>
+                    {otherMembers.map((member)=> (<img key={member.id} src={member.picture} alt={member.name} loading='lazy' decoding='async'/>))}
                 </div>
             </div>
         </>

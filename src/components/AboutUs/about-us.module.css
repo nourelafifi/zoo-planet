@@ -1,11 +1,11 @@
-#aboutUs {
+.aboutUs {
     background-color: #D85739;
     min-height: fit-content;
     padding: 1.5em 1.7em;
     color: #fbfaf6;
 }
 
-#aboutUs article {
+.aboutUs article {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -14,12 +14,12 @@
     width: 100%;
 }
 
-#aboutUs p {
+.aboutUs p {
     max-width: 65%;
     padding: 0.8em;
 }
 
-#aboutUsPic {
+.aboutUsPic {
     max-width: 27%;
     display: flex;
     justify-content: center;
@@ -27,7 +27,7 @@
     position: relative;
 }
 
-#aboutUsPic::before {
+.aboutUsPic::before {
         content: '';
         width: 100%;
         height: 100%;
@@ -56,7 +56,7 @@
     }
 }
 
-#aboutUsPic img{
+.aboutUsPic img{
     width: 100%;
     border-radius: 40% 60% 44% 56% / 58% 33% 67% 42%;
     z-index: 2;
@@ -80,7 +80,7 @@
     }
 }
 
-#aboutUs button {
+.button {
     display: block;
     width: 7em;
     height: 3em;
@@ -101,21 +101,21 @@
 
 @media screen and (max-width: 600px) {
 
-    #aboutUs {
+    .aboutUs {
         padding: 1.5em 0em;
     }
 
-    #aboutUs article {
+    .aboutUs article {
         flex-direction: column-reverse;
     }
 
-    #aboutUs p {
+    .aboutUs p {
         margin-left: 0;
         width: 100%;
         max-width: none;
     }
 
-    #aboutUsPic {
+    .aboutUsPic {
         max-width: none;
         width: 70%;
         margin-top: 0.5em;
@@ -123,7 +123,7 @@
 }
 
 @media screen and (min-width: 1800px) {
-    #aboutUs p {
+    .aboutUs p {
         font-size: 2.5rem;
     }
 }

@@ -1,9 +1,6 @@
 header {
     width: 100%;
     min-height: 7%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
     gap: 1em;
     padding: 0.1em 0.7em;
     background-color: #fbfaf6;
@@ -11,9 +8,16 @@ header {
     z-index: 10;
     box-shadow: 0px 0.5px 10px gray;
     position: fixed;
+    color: #93a55d;
 }
 
-#asideHeaderBtn {
+header, nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.asideHeaderBtn {
     position: absolute;
     left: 0.3em;
     background-color: transparent;
@@ -23,24 +27,23 @@ header {
     display: none;
 }
 
-#brand {
+.brand {
     display: flex;
     flex-direction: row;
     align-items: center;
 }
 
-#brand h2 {
+.brand h2 {
     font-size: 1.1rem;
     font-family: archivo black;
     margin-left: 0.3em;
-    color: #93a55d;
 }
 
-#logo {
+.logo {
     height: 3.2em;
 }
 
-#brandPaw {
+.brandPaw {
     font-size: 0.8em;
     rotate: -30deg;
     margin-bottom: 1.5em;
@@ -49,9 +52,6 @@ header {
 }
 
 nav {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
     min-width: 58%;
 }
 
@@ -59,9 +59,7 @@ nav a {
     font-size: 1.1rem;
     color: #93a55d;
     transition: 0.5s;
-    cursor: pointer;
     font-weight: bolder;
-    position: relative;
 }
 
 nav a:hover {
@@ -83,7 +81,7 @@ nav a:hover {
     header {
         justify-content: center;
     }
-    #asideHeaderBtn {
+    .asideHeaderBtn {
         display: block;
     }
 }
@@ -104,15 +102,15 @@ nav a:hover {
         bottom: 27px;
     }
 
-    #logo {
+    .logo {
         height: 6em;
     }
 
-    #brand h2 {
+    .brand h2 {
         font-size: 2em;
     }
 
-    #brandPaw {
+    .brandPaw {
         font-size: 1.5em;
     }
 }

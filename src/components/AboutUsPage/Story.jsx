@@ -2,7 +2,6 @@ import Curousel from './Curousel';
 import styles from './story.module.css'
 import Typewriter from 'typewriter-effect'
 import { useState } from 'react'
-import beginning from '../../assets/beginning.webp'
 import hospital from '../../assets/hospital.webp'
 import thanAStore from '../../assets/thanAStore.webp'
 import philosophy from '../../assets/philosophy.webp'
@@ -20,12 +19,12 @@ const script = [
 ];
 export default function Story() {
     const [index , setIndex]= useState(0)
-    const images= [beginning , hospital , thanAStore , philosophy , team , commitment , promise]
+    const images= [hospital , thanAStore , philosophy , team , commitment , promise]
     const [fade, setFade] = useState(true);
     return (
         <>
-            <section id={styles.story}>
-            <div id={styles.writer} style={{opacity: fade ? 1 : 0, transition: "opacity 1s ease-in-out"}}>
+            <section className={styles.story}>
+            <div className={styles.writer} style={{opacity: fade ? 1 : 0, transition: "opacity 1s ease-in-out"}}>
                 <Typewriter key={index} options={{ strings: script[index], autoStart: true, delay: 15, deletingcursor: "|"}} />
             </div>
             <Curousel index={index} images={images} setIndex={setIndex} setFade={setFade}/>

@@ -1,5 +1,5 @@
-import styles from './services.module.css'
-import { useState } from 'react'
+import styles from './services.module.css';
+import { useState } from 'react';
 export default function SCard ({icon,title,hoverImage,description}) {
     const [ hovered , setHovered ] = useState(false)
     const hovering = hovered? {

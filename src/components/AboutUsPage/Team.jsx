@@ -9,9 +9,9 @@ export default function Team() {
     const [ index , setIndex ]= useState(0)
     return (
         <>
-        <section id={styles.team}>
+        <section className={styles.team}>
             <h2><FontAwesomeIcon icon={faPaw} />Meet Our Staff<FontAwesomeIcon icon={faPaw} /></h2>
-            <div id={styles.mainContainer}>
+            <div className={styles.mainContainer}>
                 <StaffPic staff={staff} index={index} setIndex={setIndex}/>
                 <StaffDetails staff={staff} index={index}/>
             </div>

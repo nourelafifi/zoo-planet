@@ -1,4 +1,4 @@
-#hero {
+.hero {
     padding: 0.7em 3em;
     display: flex;
     align-items: center;
@@ -13,7 +13,7 @@
     min-height: 90vh;
 }
 
-#hero p {
+.hero p {
     margin-top: 27%;
     font-weight: 900;
     font-size: 3rem;
@@ -21,12 +21,12 @@
     color: #93a55d;
 }
 
-#hero p span {
+.hero p span {
     margin-left: 3rem;
     font-size: 3rem;
 }
 
-#contactButton {
+.contactButton {
     margin-top: 1.2em;
     display: block;
     background-color: #93a55d;
@@ -41,7 +41,7 @@
     left: 38%;
 }
 
-#heroPic {
+.heroPic {
     background-image: radial-gradient(#fbfaf6 60%, #e4ddc3 );
     border-radius: 35% 65% 54% 46% / 46% 56% 44% 54%;
     overflow: hidden;
@@ -52,7 +52,7 @@
     max-height: 400px;
 }
 
-#heroPic img{
+.heroPic img{
     margin-top: 11%; 
     width: 95%;
 }
@@ -79,22 +79,22 @@
 }
 
 @media screen and (min-width:2150px) {
-    #hero p {
+    .hero p {
         font-size: 4.7rem;
     }
 
-    #hero p span {
+    .hero p span {
         font-size: 4.7rem;
     }
 
-    #heroPic {
+    .heroPic {
         max-width: none;
         max-height: none;
         width: 900px;
         height: 750px;
     }
 
-    #contactButton {
+    .contactButton {
         width: 9em;
         height: 4em;
         border-radius: 1em;
@@ -103,54 +103,54 @@
 }
 
 @media screen and (max-width:1150px) {
-    #hero p {
+    .hero p {
         font-size: 1.7rem;
     }
 
-    #hero p span {
+    .hero p span {
         font-size: 1.7rem;
     }
 }
 
 @media screen and (max-width:900px) {
-    #hero {
+    .hero {
     padding: 0.5em 1em;
     }
 
-    #heroPic {
+    .heroPic {
         width: 55%;
     }
 
-    #hero p {
+    .hero p {
         font-size: 1.8rem;
     }
 
-    #hero p span {
+    .hero p span {
         font-size: 1.8rem;
         margin-left: 0px;
     }
 
-    #contactButton {
+    .contactButton {
         left: 20%;
     }
 }
 
 @media screen and (max-width:739px) {
-    #hero {
+    .hero {
         flex-direction: column;
         justify-content: space-around;
         min-height: 100vh;
     }
-    #hero p {
+    .hero p {
         font-size: 2rem;
     }
 
-    #hero p span {
+    .hero p span {
         font-size: 2rem;
         margin-left: 3rem;
     }
 
-    #contactButton {
+    .contactButton {
         left: 50%;
         transform: translateX(-50%);
         margin-bottom: 0.6em;
@@ -160,7 +160,7 @@
         height: 35px;
     }
     
-    #heroPic {
+    .heroPic {
         margin-bottom: 1.7em;
         width: 90%;
     }

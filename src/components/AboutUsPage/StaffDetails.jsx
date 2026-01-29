@@ -5,7 +5,7 @@ export default function StaffDetails({staff , index}) {
     return (
         <>
             <div className={styles.staffDetails}>
-                <FontAwesomeIcon icon={faStethoscope} id={styles.icon}/>
+                <FontAwesomeIcon icon={faStethoscope} className={styles.icon}/>
                 <div className={styles.nameContainer}>
                     {staff.map((member)=><h3 style={{transform: `translateY(-${index * 100}%)`}} key={member.id}>DR. {member.name}</h3>)}
                 </div>

@@ -8,12 +8,12 @@ export default function HeroSection() {
     }
     
     return (
-        <section id={styles.hero}>
+        <section className={styles.hero}>
             <div>
                 <p>Treating your pet <br /> <span>with love and care <FontAwesomeIcon className='heart' icon={faHeart} /></span></p>
-                <button id={styles.contactButton} onClick={scrollToContact}>Contact Us</button>
+                <button className={styles.contactButton} onClick={scrollToContact}>Contact Us</button>
             </div>
-            <div id={styles.heroPic}>
+            <div className={styles.heroPic}>
                 <img src={heroPic}></img>
             </div>
             <div className={styles.customShapeDividerBottom1756642303}>

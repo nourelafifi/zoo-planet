@@ -3,12 +3,35 @@ import { faPaw } from '@fortawesome/free-solid-svg-icons'
 import styles from './reviews.module.css'
 import ReviewCard from './ReviewCard'
 import reviews from '../../data/reviews'
-import { useEffect,  useState} from 'react'
+import { useEffect,  useState , useRef} from 'react'
 export default function Reviews() {
     const lastnine= reviews.slice(reviews.length-9, reviews.length)
     const [index , setIndex]= useState(0)
     const [spaceMoved , setSpaceMoved]= useState(0)
     const [isSmallScreen, setIsSmallScreen] = useState(false);
+    const touchStartX = useRef(null);
+    const touchEndX = useRef(null);
+    const handleTouchStart = (e) => {
+        touchStartX.current= e.touches[0].clientX;
+    }
+    const handleTouchMove = (e) => {
+        touchEndX.current= e.changedTouches[0].clientX;
+    }
+
+    const leftHover= ()=> setIndex(index + 1)
+    const rightHover= ()=> setIndex(index - 1)
+    const handleTouchEnd = () => {
+        if (!touchStartX.current || !touchEndX.current) return;
+        const distanceSwiped = touchStartX.current - touchEndX.current;
+        if (distanceSwiped > 80) {
+            rightHover();
+        } else if (distanceSwiped < -80) {
+            leftHover();
+        }
+        touchStartX.current = null;
+        touchEndX.current = null;
+    }
+
     useEffect(() => {
         const isSmall = window.matchMedia("(max-width: 600px)").matches;
         setIsSmallScreen(isSmall);
@@ -18,11 +41,10 @@ export default function Reviews() {
             setSpaceMoved(540);
         }
     }, []);
-    const leftHover= ()=> setIndex(index + 1)
-    const rightHover= ()=> setIndex(index - 1)
+
     return (
         <>
-            <section id={styles.review}>
+            <section className={styles.reviewSection}>
                 <div className={styles.customShapeDividerTop1759339122}>
                     <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
                     <path d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z" opacity=".25" className={styles.shapeFill}></path>
@@ -30,14 +52,14 @@ export default function Reviews() {
                     <path d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z" className={styles.shapeFill}></path>
                     </svg>
                 </div>
-                <h2 id={styles.heading}><FontAwesomeIcon icon={faPaw} />Reviews<FontAwesomeIcon icon={faPaw} /></h2>
+                <h2 className={styles.heading}><FontAwesomeIcon icon={faPaw} />Reviews<FontAwesomeIcon icon={faPaw} /></h2>
                 
                 <div className={styles.carousel}>
-                    <button id={styles.leftBtn} className={styles.hoverBtns} onClick={leftHover} disabled={index===4}>←</button>
-                    <div className={styles.carouselTrack} style={{ transform: `translateX(${(index) * spaceMoved}px)`}}>
+                    <button className={`${styles.hoverBtns} ${styles.leftBtn}`} onClick={leftHover} disabled={index===4}>←</button>
+                    <div className={styles.carouselTrack} style={{ transform: `translateX(${(index) * spaceMoved}px)`}} onTouchStart={handleTouchStart} onTouchMove={handleTouchMove} onTouchEnd={handleTouchEnd}>
                         {lastnine.map((review)=><ReviewCard key={review.id} reviews={review} id={review.id+index===5 ? styles.activeSlide:undefined} isSmallScreen={isSmallScreen}/>)}
                     </div>                 
-                    <button id={styles.rightBtn} className={styles.hoverBtns} onClick={rightHover} disabled={index===-4}>→</button>
+                    <button className={`${styles.hoverBtns} ${styles.rightBtn}`} onClick={rightHover} disabled={index===-4}>→</button>
                 </div>
             </section>
         </>

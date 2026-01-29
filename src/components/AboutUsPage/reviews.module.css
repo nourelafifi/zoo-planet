@@ -17,7 +17,7 @@
 .customShapeDividerTop1759339122 .shapeFill {
     fill: #fbfaf6;
 }
-#review {
+.reviewSection {
     min-height: fit-content;
     background-color: #D85739;
     position: relative;
@@ -26,7 +26,7 @@
     align-items: center;
 }
 
-#heading {
+.heading {
     padding-top: 50px;
 }
 
@@ -102,11 +102,11 @@
     top: 250px;
 }
 
-#leftBtn {
+.leftBtn {
     left: 20%;
 }
 
-#rightBtn {
+.rightBtn {
     right: 20%;
 }
 
@@ -116,23 +116,23 @@
     }
 
 @media screen and (max-width:1000px) {
-    #leftBtn {
+    .leftBtn {
     left: 10%;
-}
+    }
 
-#rightBtn {
-    right: 10%;
-}
+    .rightBtn {
+        right: 10%;
+    }
 }
 
 @media screen and (max-width:770px) {
-    #leftBtn {
+    .leftBtn {
     left: 5%;
-}
+    }
 
-    #rightBtn {
+    .rightBtn {
     right: 5%;
-}
+    }
 }
 
 @media screen and (max-width:690px) {
@@ -140,15 +140,15 @@
         top: 200px;
     }
     
-    #leftBtn {
+    .leftBtn {
     left: 5px;
-}
+    }
 
-#rightBtn {
-    right: 5px;
-}
+    .rightBtn {
+        right: 5px;
+    }
 
-.carousel {
-    margin-top: 25px;
-}
+    .carousel {
+        margin-top: 25px;
+    }
 }

@@ -34,14 +34,13 @@
     color: #93a55d;
 }
 
-#servicesContent {
+.servicesContent {
     display: flex;
     justify-content: space-between;
     flex-direction: row;
     height: fit-content;
     position: relative;
     width: 200%;
-    position: relative;
     transition: 0.5s;
     padding: 1.1em 0em;
 }
@@ -103,7 +102,7 @@
     opacity: 1;
 }
 
-#activeSlideBtn {
+.activeSlideBtn {
     opacity: 1;
     transform: scale(1);
 }

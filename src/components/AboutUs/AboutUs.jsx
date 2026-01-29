@@ -1,12 +1,11 @@
-import aboutUsPic from '../../assets/Brand.webp'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faPaw } from '@fortawesome/free-solid-svg-icons'
-import { useNavigate } from 'react-router-dom'
-import styles from './about-us.module.css'
+import aboutUsPic from '../../assets/Brand.webp';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faPaw } from '@fortawesome/free-solid-svg-icons';
+import { Link } from 'react-router-dom';
+import styles from './about-us.module.css';
 export default function AboutUs() {
-    const navigate= useNavigate()
     return (
-        <section id={styles.aboutUs}>
+        <section className={styles.aboutUs}>
             <h2><FontAwesomeIcon className={styles.h2Paw} icon={faPaw} /> About Us <FontAwesomeIcon className='h2-paw' icon={faPaw} /></h2>
             <article>
                 <p>Founded in 2012, Zoo Planet has been a trusted haven
@@ -22,9 +21,9 @@ export default function AboutUs() {
                     needs. At Zoo Planet, we treat every pet like family—and we’re
                     proud to be part of your journey in giving them the best life possible.
                 </p>
-                <figure id={styles.aboutUsPic}><img src={aboutUsPic}></img></figure>
+                <figure className={styles.aboutUsPic}><img src={aboutUsPic}></img></figure>
             </article>
-            <button onClick={()=> navigate('/AboutUs')}>Know More</button>
+            <Link className={styles.button} to='/AboutUs'>Know More</Link>
         </section>
     )
 }

@@ -9,7 +9,7 @@ footer {
     color: #FBFAF6;
 }
 
-#footerMain {
+.footerMain {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -58,7 +58,7 @@ footer h3 {
     font-size: 1.5rem;
 }
 
-#footerMain h4 {
+.footerMain h4 {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -79,7 +79,7 @@ footer h3 {
     font-size: 1.2em;
 }
 
-#footerFollow {
+.footerFollow {
     margin-left: 0.5em;
     position: relative;
     right: 2em;
@@ -109,7 +109,7 @@ footer ul a:hover {
     transform: translateY(-5px);
 }
 
-#footerPortfolio {
+.footerPortfolio {
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -138,7 +138,7 @@ footer p {
         align-items: center;
     }
 
-    #footerMain section {
+    .footerMain section {
         left: 0;
         right: 0;
         margin: 0;
@@ -148,7 +148,7 @@ footer p {
         align-items: center;
     }
 
-    #footerFollow {
+    .footerFollow {
         margin: 0;
         top: 0;
         margin-bottom: 1em;
@@ -158,7 +158,7 @@ footer p {
         margin-left: 0em;
     }
 
-    #footerMain h4 {
+    .footerMain h4 {
         font-size: 1.4em;
     }
 }
@@ -168,7 +168,7 @@ footer p {
         margin-left: 0em;
     }
 
-    #footerMain h4 {
+    .footerMain h4 {
         font-size: 1.4em;
     }
 }

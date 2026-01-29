@@ -1,18 +1,17 @@
-import styles from './services.module.css'
+import styles from './services.module.css';
 export default function SlideBtn({ slideLeft, slideRight, activeBtn }) {
     return (
-        <div id={styles.btnContainer}>
+        <div className={styles.btnContainer}>
             <button
-                className={styles.slideBtn}
+                className={`${styles.slideBtn} ${activeBtn === "left" ? styles.activeSlideBtn : undefined}`}
                 onClick={slideLeft}
-                id={activeBtn === "left" ? styles.activeSlideBtn : undefined}
+                
             >
                 ●
             </button>
             <button
-                className={styles.slideBtn}
+                className={`${styles.slideBtn} ${activeBtn === "right" ? styles.activeSlideBtn : undefined}`}
                 onClick={slideRight}
-                id={activeBtn === "right" ? styles.activeSlideBtn : undefined}
             >
                 ●
             </button>
