@@ -52,14 +52,12 @@ export default function Services() {
                 </svg>
             </div>
             <h2><FontAwesomeIcon icon={faPaw} /> Services <FontAwesomeIcon icon={faPaw} /></h2>
-            <div className={styles.bigContainer}>
-                <div className={styles.servicesContent} style={{left: `${slide}%`}} onTouchStart={handleTouchStart} onTouchMove={handleTouchMove} onTouchEnd={handleTouchEnd}>
-                    <div className={styles.slide}>
-                        {firstslide.map((service)=> (<SCard key={service.id} icon={<FontAwesomeIcon icon={service.icon} />} title={service.title} hoverImage={service.hoverImg} description={service.description}/>))}
-                    </div>
-                    <div className={styles.slide}>
-                        {secondslide.map((service)=> (<SCard key={service.id} icon={<FontAwesomeIcon icon={service.icon} />} title={service.title} hoverImage={service.hoverImg} description={service.description}/>))}
-                    </div>
+            <div className={styles.servicesContent} style={{left: `${slide}%`}} onTouchStart={handleTouchStart} onTouchMove={handleTouchMove} onTouchEnd={handleTouchEnd}>
+                <div className={styles.slide}>
+                    {firstslide.map((service)=> (<SCard key={service.id} icon={<FontAwesomeIcon icon={service.icon} />} title={service.title} hoverImage={service.hoverImg} description={service.description}/>))}
+                </div>
+                <div className={styles.slide}>
+                    {secondslide.map((service)=> (<SCard key={service.id} icon={<FontAwesomeIcon icon={service.icon} />} title={service.title} hoverImage={service.hoverImg} description={service.description}/>))}
                 </div>
             </div>
             <SlideBtn slideLeft={moveLeft} slideRight={moveRight} activeBtn={activeBtn}/>
