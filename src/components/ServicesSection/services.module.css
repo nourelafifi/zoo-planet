@@ -43,6 +43,8 @@
     width: 200%;
     transition: 0.5s;
     padding: 1.1em 0em;
+    touch-action: pan-y;
+    -webkit-user-select: none;
 }
 
 .slide {
