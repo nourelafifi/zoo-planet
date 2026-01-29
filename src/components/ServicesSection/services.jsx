@@ -30,9 +30,10 @@ export default function Services() {
     const handleTouchEnd = () => {
         if (!touchStartX.current || !touchEndX.current) return;
         const distanceSwiped = touchStartX.current - touchEndX.current;
-        if (distanceSwiped > 50) {
+        const threshold = window.innerWidth * 0.1;
+        if (distanceSwiped > threshold) {
         moveRight();
-        } else if (distanceSwiped < -50) {
+        } else if (distanceSwiped < -threshold) {
         moveLeft();
         }
         touchStartX.current = null;

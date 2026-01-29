@@ -18,14 +18,15 @@ export default function Reviews() {
         touchEndX.current= e.changedTouches[0].clientX;
     }
 
-    const leftHover= ()=> setIndex(index + 1)
-    const rightHover= ()=> setIndex(index - 1)
+    const leftHover= ()=> {if (index !==4) setIndex(index + 1)}
+    const rightHover= ()=> {if (index !==-4) setIndex(index - 1)}
     const handleTouchEnd = () => {
         if (!touchStartX.current || !touchEndX.current) return;
         const distanceSwiped = touchStartX.current - touchEndX.current;
-        if (distanceSwiped > 50) {
+        const threshold = window.innerWidth * 0.1;
+        if (distanceSwiped > threshold) {
             rightHover();
-        } else if (distanceSwiped < -50) {
+        } else if (distanceSwiped < -threshold) {
             leftHover();
         }
         touchStartX.current = null;
