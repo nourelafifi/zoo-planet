@@ -23,9 +23,9 @@ export default function Reviews() {
     const handleTouchEnd = () => {
         if (!touchStartX.current || !touchEndX.current) return;
         const distanceSwiped = touchStartX.current - touchEndX.current;
-        if (distanceSwiped > 80) {
+        if (distanceSwiped > 50) {
             rightHover();
-        } else if (distanceSwiped < -80) {
+        } else if (distanceSwiped < -50) {
             leftHover();
         }
         touchStartX.current = null;
