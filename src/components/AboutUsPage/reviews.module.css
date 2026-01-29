@@ -79,8 +79,7 @@
     transition: transform 1s ease-in-out;
     display: flex;
     flex-direction: row;
-    touch-action: pan-y;
-    -webkit-user-select: none;
+    touch-action: none;
 }
 
 #activeSlide {
