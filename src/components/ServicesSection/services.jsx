@@ -11,10 +11,10 @@ export default function Services() {
     const [slide , setSlide] = useState(50)
     const [activeBtn, setActiveBtn] = useState('left');
     const handleTouchStart = (e) => {
-        touchStartX.current = e.touches[0].clientX;
+        touchStartX.current = e.targetTouches[0].clientX;
     }
     const handleTouchMove = (e) => {
-        touchEndX.current = e.changedTouches[0].clientX;
+        touchEndX.current = e.targetTouches[0].clientX;
     }
 
     const moveLeft = () => {

@@ -12,10 +12,10 @@ export default function Reviews() {
     const touchStartX = useRef(null);
     const touchEndX = useRef(null);
     const handleTouchStart = (e) => {
-        touchStartX.current= e.touches[0].clientX;
+        touchStartX.current= e.targetTouches[0].clientX;
     }
     const handleTouchMove = (e) => {
-        touchEndX.current= e.changedTouches[0].clientX;
+        touchEndX.current= e.targetTouches[0].clientX;
     }
 
     const leftHover= ()=> {if (index !==4) setIndex(index + 1)}
