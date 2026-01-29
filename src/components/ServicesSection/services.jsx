@@ -12,11 +12,9 @@ export default function Services() {
     const [activeBtn, setActiveBtn] = useState('left');
     const handleTouchStart = (e) => {
         touchStartX.current = e.touches[0].clientX;
-        console.log(touchStartX.current);
     }
     const handleTouchMove = (e) => {
         touchEndX.current = e.changedTouches[0].clientX;
-        console.log(touchEndX.current);
     }
 
     const moveLeft = () => {
