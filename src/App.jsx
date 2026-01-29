@@ -6,7 +6,7 @@ import Homepage from './pages/Homepage'
 import Booking from './pages/Booking'
 import AboutUsPage from './pages/AboutUsPage'
 import { useEffect, useState } from 'react'
-import {Routes , Route, HashRouter} from 'react-router-dom'
+import { BrowserRouter , Routes , Route} from 'react-router-dom'
 import ScrollToTop from "./ScrollToTop"
 import NotFound from './pages/NotFound'
 import Aside from './components/aside/Aside'
@@ -25,7 +25,7 @@ function App() {
   }, [aside]);
   return (
     <>
-      <HashRouter basename="/zoo-planet">
+      <BrowserRouter basename="/zoo-planet">
         <ScrollToTop />
         <Header setAside={setAside}/>
         <Aside aside={aside} setAside={setAside}/>
@@ -38,7 +38,7 @@ function App() {
         <Footer />
         <ConsultationIcon setConsult={()=> setConsult(true)}/>
         <ConsultationBox consult={consult} setConsult={()=> setConsult(false)}/>
-      </HashRouter>
+      </BrowserRouter>
     </>
   )
 }
